@@ -7,7 +7,9 @@
 }
 
 
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -36,18 +38,18 @@ body {
     overflow: hidden;
 }
 
-.logo-box {
+.header__logo-box {
     position: absolute;
     top: 40px;
     left: 40px;
 }
 
-.logo {
+.header__logo {
     height: 35px;
     width: auto;
 }
 
-.text-box {
+.header__text-box {
     position: absolute;
     top: 40%;
     left: 50%;

@@ -1,7 +1,7 @@
 .header {
     position: relative;
     height: 95vh;
-    background-image: linear-gradient(to right bottom, rgba(140, 213, 111, 0.6), rgba(39, 180, 133, 0.9)), url('../img/hero.jpg');
+    background-image: linear-gradient(to right bottom, rgba(140, 213, 111, 0.6), rgba($color-primary-dark, 0.9)), url('../img/hero.jpg');
     background-size: cover;
     background-position: top;
     clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
@@ -11,25 +11,26 @@
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     overflow: hidden;
-}
 
-.header__logo-box {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-}
 
-.header__logo {
-    height: 35px;
-    width: auto;
-}
+    &__logo {
+        height: 35px;
+        width: auto;
+    }
 
-.header__text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    &__logo-box {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
 }
 
 .heading-primary {

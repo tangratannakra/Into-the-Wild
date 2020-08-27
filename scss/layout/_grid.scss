@@ -1,5 +1,5 @@
 .row {
-    width: 100%;
+    max-width: 1119px;
     margin: 0 auto;
 
     &:not(:last-child) {
@@ -29,7 +29,6 @@
 
 [class^="col-"] {
     float: left;
-    background-color: $color-primary-dark;
 
     &:not(:last-child) {
         margin-right: $gutter-horizontal;

@@ -1,0 +1,15 @@
+.heading-secondary {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: color 0.5s ease;
+
+    &:hover {
+        color: darken($color-primary-dark, 10%);
+    }
+}

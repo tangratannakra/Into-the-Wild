@@ -358,6 +358,42 @@ body {
           box-shadow: none;
 }
 
+.image-gallery {
+  position: relative;
+}
+
+.image-gallery__photo {
+  width: 55%;
+  -webkit-box-shadow: 0 10px 30px rgba(12, 55, 41, 0.6);
+          box-shadow: 0 10px 30px rgba(12, 55, 41, 0.6);
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.image-gallery__photo:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  z-index: 10;
+}
+
+.image-gallery__photo--p1 {
+  left: -10%;
+  z-index: 1;
+}
+
+.image-gallery__photo--p2 {
+  top: 150px;
+  left: 15%;
+  z-index: 2;
+}
+
+.image-gallery__photo--p3 {
+  top: 50px;
+  left: 50%;
+  z-index: 0;
+}
+
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;

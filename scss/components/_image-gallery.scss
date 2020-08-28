@@ -1,0 +1,33 @@
+.image-gallery {
+    position: relative;
+
+    &__photo {
+        width:55%;
+        box-shadow:0 10px 30px rgba(darken($color-primary-dark, 30%), 0.6);
+        position: absolute;
+        transition: all 0.5s ease;
+
+        &:hover{
+            transform: scale(1.5);
+            z-index: 10;
+        }
+        
+
+        &--p1 {
+            left: -10%;
+            z-index:1;
+        }
+
+        &--p2 {
+            top:150px;
+            left:15%;
+            z-index: 2;
+        }
+
+        &--p3 {
+            top:50px;
+            left: 50%;
+            z-index: 0;
+        }
+    }
+}

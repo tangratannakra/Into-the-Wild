@@ -1,7 +1,7 @@
 .card-popular {
     perspective: 150rem;
     -moz-perspective: 150rem;
-    height: 50rem;
+    height: 90vh;
     
     
     &__side {
@@ -42,18 +42,49 @@
     &:hover &__side--back {
         transform: rotateY(0deg);
     }
-}
 
-
-.card-popular__image{
+    
+&__image{
     background-size: cover;
     background-blend-mode: screen;
-    height:23rem;
+    height:45%;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100% );
     
-
     &--first {
         background-image: linearGradient($color-orange-light, $color-orange-dark), url(../img/nat-5.jpg);
     }
+}
+
+&__heading {
+    background-color: rgba($color-orange-dark, 0.6);
+    padding:10px;
+    font-size:1.3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align:right;
+    color: white;
+    position: absolute;
+    top: 30%;
+    right:2rem;
+}
+
+&__list {
+    padding: 50px;
+    ul {
+        list-style: none;
+        li {
+            line-height: 1.6rem;
+                text-align: center;
+                padding: 10px 0px;
+
+            &:not(:last-child){
+                border-bottom: 1px solid $color-grey-light;
+            }
+            
+        }
+    }
+
+    }
+
 }

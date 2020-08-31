@@ -439,7 +439,7 @@ body {
   -webkit-perspective: 150rem;
           perspective: 150rem;
   -moz-perspective: 150rem;
-  height: 50rem;
+  height: 90vh;
 }
 
 .card-popular__side {
@@ -496,7 +496,7 @@ body {
 .card-popular__image {
   background-size: cover;
   background-blend-mode: screen;
-  height: 23rem;
+  height: 45%;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
@@ -504,6 +504,37 @@ body {
 .card-popular__image--first {
   background-image: -webkit-gradient(linear, right top, left top, from(#ff7730), to(#ffb900)), url(../img/nat-5.jpg);
   background-image: linear-gradient(to left, #ff7730, #ffb900), url(../img/nat-5.jpg);
+}
+
+.card-popular__heading {
+  background-color: rgba(255, 119, 48, 0.6);
+  padding: 10px;
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right;
+  color: white;
+  position: absolute;
+  top: 30%;
+  right: 2rem;
+}
+
+.card-popular__list {
+  padding: 50px;
+}
+
+.card-popular__list ul {
+  list-style: none;
+}
+
+.card-popular__list ul li {
+  line-height: 1.6rem;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.card-popular__list ul li:not(:last-child) {
+  border-bottom: 1px solid #f7f7f7;
 }
 
 .section-about {

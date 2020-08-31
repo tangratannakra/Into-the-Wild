@@ -81,10 +81,27 @@
             &:not(:last-child){
                 border-bottom: 1px solid $color-grey-light;
             }
-            
         }
     }
 
+}
+
+&__price {
+    width: 100%;
+    padding:120px 50px;
+    color: white;
+    font-size:0.9rem;
+    text-transform: uppercase;
+
+    h4{
+        font-size: 3rem;
+        font-weight: 300;
+        padding-top: 50px;
     }
+}
+
+&__cta {
+    text-align: center;
+}
 
 }

@@ -537,6 +537,24 @@ body {
   border-bottom: 1px solid #f7f7f7;
 }
 
+.card-popular__price {
+  width: 100%;
+  padding: 120px 50px;
+  color: white;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.card-popular__price h4 {
+  font-size: 3rem;
+  font-weight: 300;
+  padding-top: 50px;
+}
+
+.card-popular__cta {
+  text-align: center;
+}
+
 .section-about {
   padding: 25rem 0;
   margin-top: -20rem;

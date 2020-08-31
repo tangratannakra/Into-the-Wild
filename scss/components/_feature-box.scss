@@ -26,7 +26,7 @@
     
     &--white {
         background-color: $color-white;
-        border-radius: 0.5rem;
-        box-shadow: 1px 2px 10px rgba(darken($color-grey-dark, 30%), 0.7);
+        border-radius: $border-radius;
+        @include box-shadow;
     } 
 }

@@ -430,17 +430,16 @@ body {
 
 .feature-box--white {
   background-color: #fff;
-  border-radius: 0.5rem;
-  -webkit-box-shadow: 1px 2px 10px rgba(43, 43, 43, 0.7);
-          box-shadow: 1px 2px 10px rgba(43, 43, 43, 0.7);
+  border-radius: 0.3rem;
+  -webkit-box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .card-popular {
-  background-color: #fff;
   -webkit-perspective: 150rem;
           perspective: 150rem;
   -moz-perspective: 150rem;
-  height: 10rem;
+  height: 50rem;
 }
 
 .card-popular__side {
@@ -454,6 +453,10 @@ body {
   left: 0px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  -webkit-box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 0.3rem;
+  overflow: hidden;
 }
 
 .card-popular__side--front {
@@ -461,19 +464,46 @@ body {
 }
 
 .card-popular__side--back {
-  background-color: #dedede;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
+.card-popular__side--green {
+  background-image: -webkit-gradient(linear, right top, left top, from(#28b485), to(#8cd56f));
+  background-image: linear-gradient(to left, #28b485, #8cd56f);
+}
+
+.card-popular__side--blue {
+  background-image: -webkit-gradient(linear, right top, left top, from(#5647fa), to(#2998ff));
+  background-image: linear-gradient(to left, #5647fa, #2998ff);
+}
+
+.card-popular__side--orange {
+  background-image: -webkit-gradient(linear, right top, left top, from(#ff7730), to(#ffb900));
+  background-image: linear-gradient(to left, #ff7730, #ffb900);
+}
+
 .card-popular:hover .card-popular__side--front {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
 }
 
 .card-popular:hover .card-popular__side--back {
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
+}
+
+.card-popular__image {
+  background-size: cover;
+  background-blend-mode: screen;
+  height: 23rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.card-popular__image--first {
+  background-image: -webkit-gradient(linear, right top, left top, from(#ff7730), to(#ffb900)), url(../img/nat-5.jpg);
+  background-image: linear-gradient(to left, #ff7730, #ffb900), url(../img/nat-5.jpg);
 }
 
 .section-about {

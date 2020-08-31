@@ -1,10 +1,9 @@
 .card-popular {
-    background-color: $color-white;
     perspective: 150rem;
     -moz-perspective: 150rem;
-    height: 10rem;
+    height: 50rem;
     
-
+    
     &__side {
         transition: all 0.6s ease;
         position: relative;
@@ -14,22 +13,47 @@
         top:0px;
         left:0px;
         backface-visibility: hidden;
+        @include box-shadow;
+        border-radius: $border-radius;
+        overflow:hidden;
             
         &--front{
             background-color: $color-white;
            }
           
-
         &--back{
-            background-color: darken($color-grey-light, 10) ;
             transform: rotateY(180deg); 
+        }
+
+        &--green {
+            background-image: linearGradient($color-primary-light, $color-primary-dark);
+        }
+        &--blue {
+            background-image:linearGradient($color-blue-light, $color-blue-dark);
+        }
+        &--orange {
+            background-image: linearGradient($color-orange-light, $color-orange-dark);
         }
     }
 
     &:hover &__side--front {
-        transform: rotateY(180deg);
+        transform: rotateY(-180deg);
     }
     &:hover &__side--back {
         transform: rotateY(0deg);
+    }
+}
+
+
+.card-popular__image{
+    background-size: cover;
+    background-blend-mode: screen;
+    height:23rem;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100% );
+    
+
+    &--first {
+        background-image: linearGradient($color-orange-light, $color-orange-dark), url(../img/nat-5.jpg);
     }
 }

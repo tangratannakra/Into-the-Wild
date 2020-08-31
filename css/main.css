@@ -501,13 +501,22 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
-.card-popular__image--first {
+.card-popular__image--orange {
   background-image: -webkit-gradient(linear, right top, left top, from(#ff7730), to(#ffb900)), url(../img/nat-5.jpg);
   background-image: linear-gradient(to left, #ff7730, #ffb900), url(../img/nat-5.jpg);
 }
 
+.card-popular__image--green {
+  background-image: -webkit-gradient(linear, right top, left top, from(#28b485), to(#8cd56f)), url(../img/nat-6.jpg);
+  background-image: linear-gradient(to left, #28b485, #8cd56f), url(../img/nat-6.jpg);
+}
+
+.card-popular__image--blue {
+  background-image: -webkit-gradient(linear, right top, left top, from(#5647fa), to(#2998ff)), url(../img/nat-7.jpg);
+  background-image: linear-gradient(to left, #5647fa, #2998ff), url(../img/nat-7.jpg);
+}
+
 .card-popular__heading {
-  background-color: rgba(255, 119, 48, 0.6);
   padding: 10px;
   font-size: 1.3rem;
   font-weight: 300;
@@ -517,6 +526,18 @@ body {
   position: absolute;
   top: 30%;
   right: 2rem;
+}
+
+.card-popular__heading--orange {
+  background-color: rgba(255, 119, 48, 0.6);
+}
+
+.card-popular__heading--green {
+  background-color: rgba(40, 180, 133, 0.6);
+}
+
+.card-popular__heading--blue {
+  background-color: rgba(86, 71, 250, 0.6);
 }
 
 .card-popular__list {

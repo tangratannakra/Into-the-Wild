@@ -228,7 +228,6 @@ body {
 .row {
   max-width: 1119px;
   margin: 0 auto;
-  padding: 0px 25px;
 }
 
 .row:not(:last-child) {
@@ -321,6 +320,15 @@ body {
 
 .btn--white::after {
   background-color: #fff;
+}
+
+.btn--green {
+  color: white;
+  background-color: #28b485;
+}
+
+.btn--green::after {
+  background-color: #28b485;
 }
 
 .btn--animation {

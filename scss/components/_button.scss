@@ -45,6 +45,15 @@
 
     &::after {
         background-color: #fff;
+    }  
+}
+
+.btn--green {
+    color: white;
+    background-color: $color-primary-dark; 
+
+    &::after {
+        background-color: $color-primary-dark;
     }
 }
 

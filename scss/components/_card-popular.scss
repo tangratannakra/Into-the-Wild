@@ -1,8 +1,8 @@
 .card-popular {
     perspective: 150rem;
     -moz-perspective: 150rem;
-    height: 90vh;
-    
+    height:37rem;
+
     
     &__side {
         transition: all 0.6s ease;
@@ -16,6 +16,7 @@
         @include box-shadow;
         border-radius: $border-radius;
         overflow:hidden;
+        @include clearfix;
             
         &--front{
             background-color: $color-white;

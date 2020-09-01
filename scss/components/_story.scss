@@ -3,11 +3,12 @@
     margin: 0 auto;
     padding:3.3rem;
     padding-left: 4.8rem;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
     background-image: url();
     border-radius:$border-radius;
     @include box-shadow;
-    transform: skewX(-12deg); 
+    transform: skewX(-12deg);
+    z-index:3;
 
     &__shape {
         width: 10rem;

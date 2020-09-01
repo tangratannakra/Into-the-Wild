@@ -12,8 +12,8 @@
     &::after {
         content: ' ';
         display: inline-block;
-        height: 100%;
-        width: 100%;
+        // height: 100%;
+        // width: 100%;
         border-radius: 100px;
         position: absolute;
         top: 0;
@@ -22,11 +22,14 @@
         transition: all .4s;
     }
 
-    &:active {
+    &:active,
+    &:focus {
+        outline:none;
         transform: translateY(-1px);
         box-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
     }
-
+    
+    &,
     &:link,
     &:visited {
         text-transform: uppercase;
@@ -36,7 +39,12 @@
         border-radius: 100px;
         transition: all .2s;
         position: relative;
+
+        border: none;
+        cursor: pointer;
     }
+
+    
 }
 
 .btn--white {
@@ -70,12 +78,6 @@
         text-decoration: none;
         border-bottom: 1px solid;
     }
-
-    &:hover{
-       
-    }
-
-    &:active {}
 
     &--green {
         color: $color-primary-dark;

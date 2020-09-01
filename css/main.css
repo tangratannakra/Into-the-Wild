@@ -148,15 +148,19 @@ body {
 }
 
 .u-center-text {
-  text-align: center;
+  text-align: center !important;
 }
 
 .u-mb-1 {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem !important;
+}
+
+.u-mb-2 {
+  margin-bottom: 2.5rem !important;
 }
 
 .u-mb-5 {
-  margin-bottom: 5rem;
+  margin-bottom: 5rem !important;
 }
 
 .header {
@@ -285,8 +289,6 @@ body {
 .btn::after {
   content: ' ';
   display: inline-block;
-  height: 100%;
-  width: 100%;
   border-radius: 100px;
   position: absolute;
   top: 0;
@@ -296,14 +298,15 @@ body {
   transition: all .4s;
 }
 
-.btn:active {
+.btn:active, .btn:focus {
+  outline: none;
   -webkit-transform: translateY(-1px);
           transform: translateY(-1px);
   -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
           box-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
 }
 
-.btn:link, .btn:visited {
+.btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 15px 40px;
@@ -312,6 +315,8 @@ body {
   -webkit-transition: all .2s;
   transition: all .2s;
   position: relative;
+  border: none;
+  cursor: pointer;
 }
 
 .btn--white {
@@ -671,8 +676,8 @@ body {
   overflow: hidden;
   z-index: -1;
   opacity: 0.2;
-  -webkit-filter: saturate(0.7);
-          filter: saturate(0.7);
+  -webkit-filter: saturate(0.8);
+          filter: saturate(0.8);
 }
 
 .bg-video__content {
@@ -680,6 +685,104 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+
+.form__input {
+  font-size: 0.9rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 0.9rem 1.2rem;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: black;
+}
+
+.form__input:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0.8rem 1.2rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.8rem 1.2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #55c57a;
+}
+
+.form__input:focus:invalid {
+  border-bottom: 3px solid #ff7730;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: #777777;
+}
+
+.form__label {
+  font-size: 0.6rem;
+  font-weight: 700;
+  margin-left: 1.2rem;
+  margin-top: 0.3rem;
+  display: block;
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  -webkit-transform: translateY(-2rem);
+          transform: translateY(-2rem);
+}
+
+.form__radio-group {
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
+
+.form__radio-input {
+  display: none;
+}
+
+.form__radio-label {
+  font-size: 0.9rem;
+  cursor: pointer;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.form__radio-button {
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 3px solid #55c57a;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: -0.2rem;
+}
+
+.form__radio-button::after {
+  content: '';
+  height: 0.5rem;
+  width: 0.5rem;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #55c57a;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+
+.form__radio-input:checked + .form__radio-label > .form__radio-button::after {
+  opacity: 1;
 }
 
 .section-about {
@@ -712,5 +815,30 @@ body {
   background-color: initial;
   position: relative;
   padding: 10rem 0 5rem 0;
+}
+
+.section-book {
+  padding: 5rem 0 5rem 0;
+  background-image: -webkit-gradient(linear, right top, left top, from(#28b485), to(#8cd56f));
+  background-image: linear-gradient(to left, #28b485, #8cd56f);
+}
+
+.book {
+  height: 30rem;
+}
+
+.book--white-style {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%), url(../img/nat-10.jpg);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  background-size: cover;
+  -webkit-box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 0.3rem;
+}
+
+.book__form {
+  width: 50%;
+  padding: 3rem;
 }
 /*# sourceMappingURL=main.css.map */

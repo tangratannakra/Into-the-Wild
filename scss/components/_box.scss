@@ -1,0 +1,38 @@
+.box{
+    top: 50%;
+    margin:0 auto;
+    margin:15vh;
+    background-color: white;
+    min-width: 500px;
+    max-width: 80%;
+    height: 70vh;
+
+    &__images {
+        height: 100%;
+    }
+
+    &__image{
+        background-color:red;
+        height: 50%;
+        width: 100%;
+        background-size: cover;
+
+        &--first{
+            background-image: url(../img/nat-5.jpg); 
+        }
+
+        &--second{
+            background-image: url(../img/nat-6.jpg); 
+        }
+
+    }
+
+    &__text{
+        padding:5rem $gutter-horizontal 5rem 0;
+        &--columns{
+            columns:2;
+            column-gap: $gutter-horizontal;
+            font-size:0.9rem;
+        }  
+    }
+}

@@ -5,6 +5,42 @@ body {
 }
 
 
+.heading-primary {
+    color: #ffffff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 50px;
+
+    &--main {
+        display: block;
+        font-size: 3rem;
+        font-weight: 100;
+        letter-spacing: 1.5rem;
+        line-height: 3rem;
+        padding-bottom: 1.7rem;
+
+        animation: moveInLeft 1.5s ease-out 1s;
+        animation-fill-mode: backwards;
+    }
+
+    &--sub {
+        display: block;
+        font-weight: 700;
+        font-size: 1.2rem;
+        letter-spacing: 1rem;
+
+        @include respond-df(md){
+           font-size: 1.5rem;
+           line-height: 1.8rem;
+           letter-spacing: 1.2rem;  
+        }
+
+        animation: moveInRight 1s ease-out 1.5s;
+        animation-fill-mode: backwards;
+    }
+}
+
+
 .heading-secondary {
     font-size: 1.8rem;
     text-transform: uppercase;
@@ -16,6 +52,10 @@ body {
     color: transparent;
     transition: all 0.5s ease;
 
+    @include respond-df(md){
+        line-height: 2.5rem; 
+     }
+
     &:hover {
         font-size: 1.85rem;
         color: darken($color-primary-dark, 10%);
@@ -26,6 +66,22 @@ body {
     font-size: 1.1rem;
     font-weight: 700;
     text-transform: uppercase;
+
+    @include respond-df(md){
+        font-size: 1.4rem;
+     }
+}
+
+p {
+    @include respond-df(md){
+            
+        line-height:2.2rem;
+    }
+
+    @include respond-df(md){
+        font-size:1.4rem;
+        line-height:2.2rem;
+    }
 }
 
 .paragraph {

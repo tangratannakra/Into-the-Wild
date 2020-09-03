@@ -37,5 +37,13 @@
 
     &:not(:last-child) {
         margin-right: $gutter-horizontal;
+
+        @include respond-df(lg){
+            margin-right:0!important; 
+         }
+    }
+
+    @include respond-df(lg){
+       width: 100%!important; 
     }
 }

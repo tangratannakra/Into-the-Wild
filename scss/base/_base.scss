@@ -10,6 +10,26 @@ body {
     box-sizing: border-box;
     color: $color-grey-dark;
     padding: 1.5rem;
+
+    @include respond-df(md){
+        padding:0px;
+    }
+}
+
+html {
+    font-size: 100%;
+
+    @include respond-df(lg){
+        font-size: 80%/100%*1rem; //outputs in rem
+    }
+
+    @include respond-df(md){
+        font-size: 65%/100%*1rem;
+    }
+
+    @include respond-df(sm){
+        //font-size: 60%;
+    }
 }
 
 section {

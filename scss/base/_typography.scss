@@ -72,12 +72,7 @@ body {
      }
 }
 
-p {
-    @include respond-df(md){
-            
-        line-height:2.2rem;
-    }
-
+p {padding-bottom:2.5rem;
     @include respond-df(md){
         font-size:1.4rem;
         line-height:2.2rem;

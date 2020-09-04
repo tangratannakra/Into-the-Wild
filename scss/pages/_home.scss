@@ -53,10 +53,19 @@
         background-size: cover;
         @include box-shadow;
         border-radius: $border-radius;
+
+        @include respond-df(md){
+            height: auto;
+            background-image:linear-gradient(105deg,rgba(255,255,255, 0.9) 50%, rgba(255, 255, 255, 0.9) 100%) ,url(../img/nat-10.jpg);
+        }
     }
 
     &__form {
         width: 50%;
         padding: 3rem;
+
+        @include respond-df(md){
+            width: 100%;
+        }
     }
 }

@@ -742,6 +742,12 @@ p {
   }
 }
 
+@media (max-width: 767.9px) {
+  .image-gallery__photo {
+    width: 100%;
+  }
+}
+
 .image-gallery__photo:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
@@ -772,6 +778,13 @@ p {
   }
 }
 
+@media (max-width: 767.9px) {
+  .image-gallery__photo--p2 {
+    top: 2.5rem;
+    left: 0px;
+  }
+}
+
 .image-gallery__photo--p3 {
   top: 50px;
   left: 50%;
@@ -782,6 +795,13 @@ p {
   .image-gallery__photo--p3 {
     top: 10%;
     left: -30%;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .image-gallery__photo--p3 {
+    top: 5rem;
+    left: 0px;
   }
 }
 

@@ -693,6 +693,11 @@ body {
           box-shadow: none;
 }
 
+.btn-text--white-on-green {
+  color: white;
+  background-color: #28b485;
+}
+
 .image-gallery {
   position: relative;
 }

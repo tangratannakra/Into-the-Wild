@@ -97,4 +97,10 @@
             box-shadow: none;
         }
     }
+
+    &--white-on-green {
+        //font-weight: bold;
+        color:white;
+        background-color: $color-primary-dark;
+    }
 }

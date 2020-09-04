@@ -815,6 +815,13 @@ body {
   height: 37rem;
 }
 
+@media (max-width: 991.9px) {
+  .card-popular {
+    height: auto;
+    margin-bottom: 5rem;
+  }
+}
+
 .card-popular__side {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
@@ -853,6 +860,14 @@ body {
           transform: rotateY(180deg);
 }
 
+@media (max-width: 991.9px) {
+  .card-popular__side--back {
+    -webkit-transform: none;
+            transform: none;
+    height: 50%;
+  }
+}
+
 .card-popular__side--green {
   background-image: -webkit-gradient(linear, right top, left top, from(#28b485), to(#8cd56f));
   background-image: linear-gradient(to left, #28b485, #8cd56f);
@@ -873,9 +888,23 @@ body {
           transform: rotateY(-180deg);
 }
 
+@media (max-width: 991.9px) {
+  .card-popular:hover .card-popular__side--front {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
 .card-popular:hover .card-popular__side--back {
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
+}
+
+@media (max-width: 991.9px) {
+  .card-popular:hover .card-popular__side--back {
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 
 .card-popular__image {
@@ -884,6 +913,12 @@ body {
   height: 45%;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+@media (max-width: 991.9px) {
+  .card-popular__image {
+    height: 25rem;
+  }
 }
 
 .card-popular__image--orange {
@@ -951,6 +986,12 @@ body {
   text-transform: uppercase;
 }
 
+@media (max-width: 991.9px) {
+  .card-popular__price {
+    padding: 2.5rem 50px;
+  }
+}
+
 .card-popular__price h4 {
   font-size: 3rem;
   font-weight: 300;
@@ -959,6 +1000,12 @@ body {
 
 .card-popular__cta {
   text-align: center;
+}
+
+@media (max-width: 991.9px) {
+  .card-popular__cta {
+    margin-bottom: 2.5rem;
+  }
 }
 
 .story {
@@ -1249,10 +1296,21 @@ body {
   padding: 20rem 0 5rem 0;
 }
 
+@media (max-width: 991.9px) {
+  .section-popular a.btn--green {
+    display: none;
+  }
+}
+
 .section-stories {
   background-color: initial;
   position: relative;
   padding: 10rem 0 5rem 0;
+}
+
+.section-stories a.btn-text--green {
+  color: white;
+  background-color: #28b485;
 }
 
 .section-book {

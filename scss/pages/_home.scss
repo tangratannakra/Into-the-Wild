@@ -24,6 +24,12 @@
 .section-popular {
     margin-top:-10rem;
     padding:20rem 0 5rem 0;
+
+    @include respond-df(lg){
+        a.btn--green {
+            display: none;
+        }
+    }
 }
 
 .section-stories {
@@ -31,6 +37,12 @@
     position: relative;
     
     padding:10rem 0 5rem 0;
+
+    a.btn-text--green {
+        //font-weight: bold;
+        color:white;
+        background-color: $color-primary-dark;
+    }
 }
 
 .section-book{

@@ -51,6 +51,10 @@
     background-color: #fff;
     color: var(--lightgrey);
 
+    @include respond-df(md){
+        font-weight: 700;
+    }
+
     &::after {
         background-color: #fff;
     }  

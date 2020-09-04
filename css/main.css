@@ -281,6 +281,12 @@ body {
   overflow: hidden;
 }
 
+@media (max-width: 991.9px) {
+  .header {
+    height: 100vh;
+  }
+}
+
 .header__logo {
   height: 35px;
   width: auto;
@@ -299,6 +305,12 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
+}
+
+@media (max-width: 767.9px) {
+  .header__text-box h1 {
+    margin-bottom: 2.5rem;
+  }
 }
 
 .row {
@@ -638,6 +650,12 @@ body {
 .btn--white {
   background-color: #fff;
   color: var(--lightgrey);
+}
+
+@media (max-width: 767.9px) {
+  .btn--white {
+    font-weight: 700;
+  }
 }
 
 .btn--white::after {
@@ -1311,11 +1329,6 @@ body {
   background-color: initial;
   position: relative;
   padding: 10rem 0 5rem 0;
-}
-
-.section-stories a.btn-text--green {
-  color: white;
-  background-color: #28b485;
 }
 
 .section-book {

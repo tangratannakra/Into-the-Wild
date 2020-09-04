@@ -27,9 +27,6 @@ html {
         font-size: 65%/100%*1rem;
     }
 
-    @include respond-df(sm){
-        //font-size: 60%;
-    }
 }
 
 section {

@@ -11,6 +11,11 @@
     background-position: top;
     transform: skewY(-7deg);
 
+    @include respond-df(lg){
+        margin-top:-15rem;
+        padding:10rem 0 7.5rem 0;  
+    }
+
     &>* {
         transform: skewY(7deg);
     }

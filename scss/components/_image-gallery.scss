@@ -1,11 +1,22 @@
 .image-gallery {
     position: relative;
 
+    @include respond-df(lg){
+        padding-top:5rem;
+    }
+
     &__photo {
         width:55%;
         box-shadow:0 10px 30px rgba(darken($color-primary-dark, 30%), 0.6);
         position: absolute;
         transition: all 0.3s ease;
+
+        @include respond-df(lg){
+            width: 50%;
+            position: relative;
+            display: inline-block;
+            float: left;
+        }
 
         &:hover{
             transform: scale(1.5);
@@ -16,18 +27,31 @@
         &--p1 {
             left: -10%;
             z-index:1;
+            @include respond-df(lg){
+                left: 0px;
+            }
         }
 
         &--p2 {
             top:150px;
             left:15%;
             z-index: 2;
+
+            @include respond-df(lg){
+                top:100px;
+                left:-5%;
+            }
         }
 
         &--p3 {
             top:50px;
             left: 50%;
             z-index: 0;
+
+            @include respond-df(lg){
+                top:10%;
+                left:-30%;
+            }
         }
     }
 }

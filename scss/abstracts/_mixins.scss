@@ -57,7 +57,7 @@ shall be on top for right cascading of styles(bigest shall be last)
 @mixin respond-df($breakpoint){
     @if $breakpoint == sm { @media (max-width: 575.9px){@content}; } //576px
     @if $breakpoint == md { @media (max-width: 767.9px){@content}; } //768px
-    @if $breakpoint == lg { @media (max-width: 992px){@content}; } //992px
+    @if $breakpoint == lg { @media (max-width: 991.9px){@content}; } //992px
     @if $breakpoint == xl { @media (min-width: 1200px){@content}; } //1200px
     @if $breakpoint == xxl { @media (min-width: 1400px){@content}; } //1400px
 }

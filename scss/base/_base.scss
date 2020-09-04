@@ -11,7 +11,7 @@ body {
     color: $color-grey-dark;
     padding: 1.5rem;
 
-    @include respond-df(md){
+    @include respond-df(lg){
         padding:0px;
     }
 }

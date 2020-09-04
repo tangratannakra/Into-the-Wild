@@ -17,6 +17,10 @@
         border-radius: $border-radius;
         overflow:hidden;
         @include clearfix;
+
+        @include respond-df(lg){
+            position: relative;
+        }
             
         &--front{
             background-color: $color-white;

@@ -959,8 +959,13 @@ p {
   background-size: cover;
   background-blend-mode: screen;
   height: 45%;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+@supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0))) or (-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%)) {
+  .card-popular__image {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
 }
 
 @media (max-width: 991.9px) {

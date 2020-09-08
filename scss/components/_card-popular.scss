@@ -74,8 +74,11 @@
     background-size: cover;
     background-blend-mode: screen;
     height:45%;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100% );
+   
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%)){
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100% );
+    }
 
     @include respond-df(lg){
         height: 25rem;

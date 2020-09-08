@@ -63,9 +63,16 @@
                 </div>
                 <div class="col-1-2">
                         <div class="image-gallery">
-                            <img src="img/nat-1-large.jpg" alt="Photo 1" class="image-gallery__photo image-gallery__photo--p1">
-                            <img src="img/nat-2-large.jpg" alt="Photo 2" class="image-gallery__photo image-gallery__photo--p2">
-                            <img src="img/nat-3-large.jpg" alt="Photo 3" class="image-gallery__photo image-gallery__photo--p3">
+                            <img
+                            srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w" 
+                            src="img/nat-1-large.jpg"   
+                            alt="Photo 1" class="image-gallery__photo image-gallery__photo--p1">
+                            <img src="img/nat-2-large.jpg" alt="Photo 2" 
+                            srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                            class="image-gallery__photo image-gallery__photo--p2">
+                            <img src="img/nat-3-large.jpg" 
+                            srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                            alt="Photo 3" class="image-gallery__photo image-gallery__photo--p3">
                         </div>
                 </div>
             </div>
@@ -269,7 +276,12 @@
     </main>
     <footer class="footer">
         <div class="footer__logo-box">
-            <img src="img/logo-green-2x.png" alt="full logo" class="footer__logo">
+            <picture>
+                <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media=(min-width: 600px)>
+                <img src="img/logo-green-2x.png" srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="full logo" class="footer__logo">
+            </picture>
+            
+            
         </div>
         <div class="row">
             <div class="col-1-2">
@@ -320,29 +332,3 @@
 </body>
 
 </html>
-
-<!-- 
-    <section>
-            <div class="row">
-                <div class="col-1-2">col 1-2</div>
-                <div class="col-1-2">col 1-2</div>
-            </div>
-            <div class="row">
-                <div class="col-1-3">col 1</div>
-                <div class="col-1-3">col 1</div>
-                <div class="col-1-3">col 1</div>
-            </div>
-            <div class="row">
-                <div class="col-1-3">col</div>
-                <div class="col-2-3">col</div>
-            </div>
-            <div class="row">
-                <div class="col-1-1">col</div>
-            </div>
-
-        </section>
-
-
-
-
--->
